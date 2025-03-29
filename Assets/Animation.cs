@@ -36,18 +36,18 @@ public class Animation : MonoBehaviour
             animator.SetFloat("vertical", 0);
             //transform.Translate(Vector3.left * speed);
         }
-        else if (Input.GetKeyDown(KeyCode.Q)) // çUåÇÉgÉäÉKÅ[
+        else
+        {
+            animator.SetFloat("horizontal", 0);
+            animator.SetFloat("vertical", 0);
+        }
+        if (Input.GetKeyDown(KeyCode.Q)) // çUåÇÉgÉäÉKÅ[
         {
             animator.SetTrigger("AttackTrigger");
         }
         else if (Input.GetKeyUp(KeyCode.Q))
         {
             animator.SetTrigger("StopTrigger");
-        }
-        else
-        {
-            animator.SetFloat("horizontal", 0);
-            animator.SetFloat("vertical", 0);
         }
     }
 }

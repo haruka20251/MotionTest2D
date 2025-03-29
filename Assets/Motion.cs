@@ -21,7 +21,7 @@ public class Motion : MonoBehaviour
         {
             transform.Translate(Vector3.down * speed); // ã•ûŒü‚ÉˆÚ“®
         }
-        else if (Input.GetKey(KeyCode.A)||Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.Q))
         {
             transform.Translate(Vector3.left * speed);
         }
